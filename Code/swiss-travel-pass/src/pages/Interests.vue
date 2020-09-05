@@ -1,6 +1,5 @@
 <template>
   <q-page class="q-pa-lg bg-grey-3">
-    <h5 class="q-mt-none">Interests</h5>
 
     <q-list class="bg-white" separator>
 

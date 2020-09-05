@@ -14,7 +14,7 @@
       </q-toolbar>
 
       <div class="q-px-lg q-pt-xl q-mb-md">
-        <div class="text-h3">Swiss Travel Pass</div>
+        <div class="text-h3">{{ title }}</div>
         <div class="text-subtitle1">Made in Bern</div>
       </div>
 
@@ -28,8 +28,8 @@
         v-model="leftDrawerOpen"
         show-if-above
         :width="250"
-        :breakpoint="600"
-      >
+        :breakpoint="600">
+
         <q-scroll-area style="height: calc(100% - 192px); margin-top: 192px; border-right: 1px solid #ddd">
           <q-list padding>
 
@@ -83,9 +83,15 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
-      interests: Store.data.interests
+      interests: Store.data.interests,
+      title: "Swiss Travel Pass"
     }
-  }
+  },
+  watch: {
+    '$route' (to, from) {
+      this.title = to.meta.title || 'Swiss Travel Pass'
+    }
+  },
 }
 </script>
 

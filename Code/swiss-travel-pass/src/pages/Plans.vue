@@ -2,18 +2,19 @@
   <q-page class="q-pa-lg">
     <h5 class="q-mt-none">My Plans</h5>
 
-    <ul>
+    <q-list class="qlist">
 
-      <li 
+      <q-item class="qitem"
       v-for="interest in selectedInterests" 
       :key="interest.title"
       clickable
-      v-ripple>
+      v-ripple
+      to="/detail">
         <q-img class="interest" :src="interest.image" />
         <div class="interest__title">{{ interest.title }}</div>
-      </li>
+      </q-item>
 
-    </ul>
+    </q-list>
 
   </q-page>
 
@@ -38,11 +39,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ul {
+.qlist {
   padding: 0;
   margin: 0;
 }
-li {
+.qitem {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   width: 100%;
   height: 200px;
