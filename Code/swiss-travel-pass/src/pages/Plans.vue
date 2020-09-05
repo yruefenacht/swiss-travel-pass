@@ -10,7 +10,7 @@
       clickable
       v-ripple>
         <q-img class="interest" :src="interest.image" />
-          <div class="interest__title">{{ interest.title }}</div>
+        <div class="interest__title">{{ interest.title }}</div>
       </li>
 
     </ul>
