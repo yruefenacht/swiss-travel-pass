@@ -12,6 +12,10 @@ npm install
 quasar dev
 ```
 
+### Build the app for android
+```bash
+quasar dev -m cordova -T android
+```
 
 ### Build the app for production
 ```bash
