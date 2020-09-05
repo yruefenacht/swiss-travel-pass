@@ -123,13 +123,16 @@ const linksData = [
   }
 ];
 
+import Store from 'components/Store.vue'
+
 export default {
   name: 'MainLayout',
   components: { EssentialLink },
   data () {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksData,
+      interests: Store.data.interests
     }
   }
 }

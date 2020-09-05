@@ -27,31 +27,12 @@
 </template>
 
 <script>
+import Store from 'components/Store.vue'
+
 export default {
   data() {
     return {
-      interests: [
-        {
-          title: 'Hiking',
-          selected: true
-        },
-        {
-          title: 'Mountain Bike',
-          selected: false
-        },
-        {
-          title: 'Shopping',
-          selected: false
-        },
-        {
-          title: 'Swimming',
-          selected: false
-        },
-        {
-          title: 'Sightseeing',
-          selected: false
-        }
-      ]
+      interests: Store.data.interests
     }
   }
 }
