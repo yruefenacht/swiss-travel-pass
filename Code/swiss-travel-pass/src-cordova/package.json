@@ -1,5 +1,5 @@
 {
-  "name": "ch.multikulti.travel.app",
+  "name": "ch.multikulti.travelpass.app",
   "displayName": "Swiss Travel Pass",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
